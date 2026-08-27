@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dateBarLayout"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    style="@style/match_style">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/leftBtn"
+            android:background="@color/transparent"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="48dp"
+            android:src="@mipmap/ic_his_left"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="48dp"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/dateTime"
+            android:text="2018-03-08"
+            android:layout_centerInParent="true"
+            style="@style/warp"/>
+        <ImageView
+            android:id="@+id/rightBtn"
+            android:background="@color/transparent"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="48dp"
+            android:src="@mipmap/ic_his_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="48dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

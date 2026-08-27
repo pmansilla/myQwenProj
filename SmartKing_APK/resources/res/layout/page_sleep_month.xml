@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    style="@style/match_v">
+    <LinearLayout
+        android:layout_weight="1"
+        style="@style/match_v">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/DIMEN_60PX"
+            android:layout_marginStart="@dimen/DIMEN_60PX"
+            style="@style/warp_h">
+            <TextView
+                android:id="@+id/totalTimeTv"
+                android:visibility="invisible"
+                android:text="@string/format_month_sleep"
+                style="@style/warp"/>
+        </LinearLayout>
+        <com.czw.modes.widget.smartking.MonthLineView
+            android:id="@+id/monthLine1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_weight="1"
+        style="@style/match"/>
+</LinearLayout>

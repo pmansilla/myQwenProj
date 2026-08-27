@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="121"
+    android:versionName="2.2.0"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.czw.smartkit"
+    platformBuildVersionCode="121"
+    platformBuildVersionName="2.2.0">
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <application
+        android:theme="@style/NoTitleTheme"
+        android:label="@string/app_name_sk"
+        android:icon="@mipmap/ic_launcher_round"
+        android:name="com.czw.smartkit.MainApplication"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3b84cd1a6645e1d358e6edd38c198831"> //开发者申请的key 
+        </meta-data>
+        <activity
+            android:name="com.czw.smartkit.launch.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.czw.smartkit.user.UserInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.homeModule.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.user.UpdatePwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.LostSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.device.ClockListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.MessagePushEnableActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.user.SetNickNameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.device.ClockEditUI"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.DebugActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.MeasureHrActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.MeasureOxActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.MeasureBloodActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.history.HrHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.history.OxHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.measure.history.BloodHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.HrSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.user.LoginAcitivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.user.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.user.ResetPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.statistics.StepHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.statistics.SleepHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.statistics.TransHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.launch.ConfigUI"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.statistics.SportPathActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.HelpInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.launch.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.mob.tools.MobUIShell"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="line.1477692153"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1106155764"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.czw.smartkit.user.CountryCodeactivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.device.SearchDeviceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.setting.OTAActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.debugModule.TestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.debugModule.DebugLogActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.czw.smartkit.base.WebActivity"
+            android:screenOrientation="portrait"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service
+            android:label="DfuService"
+            android:name="com.czw.smartkit.bleModule.ota.DfuService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="ycble.runchinaup.aider.NPNotificationService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="ycble.runchinaup.aider.NPAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.czw.smartkit.liveservice.BgMainService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000"/>
+        <service
+            android:name="com.czw.smartkit.liveservice.GuardService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":GuardService"
+            android:priority="1000">
+            <intent-filter android:priority="1000">
+                <action android:name="yctest.liveservice.GuardService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.czw.smartkit.liveservice.ServiceAfter5_0"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":ServiceAfter5_0"
+            android:priority="1000"/>
+        <service android:name="com.czw.smartkit.homeModule.syncData.SyncDataService"/>
+        <service
+            android:name="ycble.runchinaup.ota.absimpl.htx.BluetoothLeService"
+            android:enabled="true"
+            android:exported="true"/>
+        <receiver android:name="ycble.runchinaup.core.BleScanner$ScannerReceiver">
+            <intent-filter>
+                <action android:name="lib.ycble.device.ACTION_FOUND"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"
+            android:exported="false"/>
+        <receiver
+            android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.support.v18.ACTION_FOUND"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.czw.smartkit.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:theme="@style/activity.Theme"
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.luck.picture.lib.PictureBaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/activity.Theme"
+            android:name="com.luck.picture.lib.PicturePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/activity.Theme"
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:screenOrientation="sensor"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/activity.Theme"
+            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/DialogActivityTheme"
+            android:name="npUpdate.nopointer.ui.UpdateAppActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="npUpdate.nopointer.util.GlobalContextProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.czw.smartkit.cp"/>
+        <service android:name="npUpdate.nopointer.update.UpdateAppService"/>
+        <provider
+            android:name="npUpdate.nopointer.update.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.czw.smartkit.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_file_paths"/>
+        </provider>
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService.SharedMainProcessService"/>
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService.SeparateProcessService"
+            android:process=":filedownloader"/>
+        <activity android:name="basecamera.module.activity.BaseCameraTakePhotoActivity"/>
+        <activity
+            android:name="basecamera.module.activity.BaseCameraGalleryActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.mob.guard.MobTranPullUpActivity">
+            <intent-filter>
+                <action android:name="com.mob.open.app_20000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.mob.guard.MobTranPullLockActivity">
+            <intent-filter>
+                <action android:name="com.mob.open.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.mob.guard.MobGuardPullUpService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_GUARD_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="mob_guard_version"
+            android:value="20002"/>
+        <service
+            android:name="com.mob.MobACService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.service.action.MOB_AC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.mob.MobProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.czw.smartkit.com.mob.MobProvider"/>
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="201f088117764"/>
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="99b7b24b5c44c5e874cc63b128f215b3"/>
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tencent1106155764"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="cn.sharesdk.wechat.utils.WechatHandlerActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity-alias
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.czw.smartkit.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity="cn.sharesdk.wechat.utils.WechatHandlerActivity"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1"/>
+    </application>
+</manifest>

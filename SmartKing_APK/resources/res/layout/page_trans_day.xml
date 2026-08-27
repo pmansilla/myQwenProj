@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    style="@style/match_v">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/history_path"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        style="@style/warp_v">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_path"/>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/sport_path"
+            style="@style/warp"/>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginLeft="24dp"
+        android:text="@string/history_record"
+        android:layout_marginStart="24dp"
+        style="@style/warp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recordListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

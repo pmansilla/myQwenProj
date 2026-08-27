@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <View style="@style/top_line"/>
+    <ScrollView style="@style/match">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:text="@string/help_1"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="@string/help_1_1"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_2"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="@string/help_2_1"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_3"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="@string/help_3_1"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_4"
+                style="@style/wrap"/>
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="@string/help_4_1"
+                style="@style/wrap"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

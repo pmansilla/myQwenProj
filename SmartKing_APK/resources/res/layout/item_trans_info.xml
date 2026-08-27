@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_trans"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="12dp"
+    android:minHeight="76dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp">
+    <TextView
+        android:id="@+id/datetimeTv"
+        android:layout_marginLeft="12dp"
+        android:text="@string/format_trans_time"
+        android:layout_marginStart="12dp"
+        style="@style/warp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <TextView
+            android:id="@+id/stepTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="步数: 43"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"/>
+        <TextView
+            android:id="@+id/distanceTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="里程:0.02Km"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:gravity="end|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp">
+            <ImageView
+                android:id="@+id/pathIv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/ico_yes"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/kcalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:text="卡路里:2 kcal"
+        android:layout_marginStart="12dp"/>
+</LinearLayout>

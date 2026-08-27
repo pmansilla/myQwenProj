@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_comm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View style="@style/top_line"/>
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        style="@style/user_item_layout">
+        <TextView
+            android:text="男"
+            style="@style/user_info_left_text"/>
+        <CheckBox
+            android:gravity="center_vertical"
+            android:id="@+id/sex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:checked="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/user_item_layout">
+        <TextView
+            android:text="女"
+            style="@style/user_info_left_text"/>
+        <CheckBox
+            android:gravity="center_vertical"
+            android:id="@+id/sex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+</LinearLayout>

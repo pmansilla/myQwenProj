@@ -1,0 +1,83 @@
+package kotlinx.coroutines.channels;
+
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* JADX INFO: Add missing generic type declarations: [E] */
+/* compiled from: Channels.common.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@ø\u0001\u0000¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "E", "Lkotlinx/coroutines/channels/ProducerScope;", "invoke", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"}, k = 3, mv = {1, 1, 15})
+@DebugMetadata(c = "kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt$filterIndexed$1", f = "Channels.common.kt", i = {0, 1, 2, 2, 3, 3}, l = {664, 664, 665, 665}, m = "invokeSuspend", n = {"index", "index", "index", "e", "index", "e"}, s = {"I$0", "I$0", "I$0", "L$1", "I$0", "L$1"})
+/* loaded from: classes2.dex */
+public final class ChannelsKt__Channels_commonKt$filterIndexed$1<E> extends SuspendLambda implements Function2<ProducerScope<? super E>, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Function3 $predicate;
+    final /* synthetic */ ReceiveChannel $this_filterIndexed;
+    int I$0;
+    Object L$0;
+    Object L$1;
+    Object L$2;
+    int label;
+    private ProducerScope p$;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ChannelsKt__Channels_commonKt$filterIndexed$1(ReceiveChannel receiveChannel, Function3 function3, Continuation continuation) {
+        super(2, continuation);
+        this.$this_filterIndexed = receiveChannel;
+        this.$predicate = function3;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @NotNull
+    public final Continuation<Unit> create(@Nullable Object obj, @NotNull Continuation<?> completion) {
+        Intrinsics.checkParameterIsNotNull(completion, "completion");
+        ChannelsKt__Channels_commonKt$filterIndexed$1 channelsKt__Channels_commonKt$filterIndexed$1 = new ChannelsKt__Channels_commonKt$filterIndexed$1(this.$this_filterIndexed, this.$predicate, completion);
+        channelsKt__Channels_commonKt$filterIndexed$1.p$ = (ProducerScope) obj;
+        return channelsKt__Channels_commonKt$filterIndexed$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(Object obj, Continuation<? super Unit> continuation) {
+        return ((ChannelsKt__Channels_commonKt$filterIndexed$1) create(obj, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0072, code lost:
+    
+        r12 = r0;
+        r0 = r4;
+        r4 = r5;
+     */
+    /* JADX WARN: Failed to find 'out' block for switch in B:2:0x0007. Please report as an issue. */
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0081  */
+    /* JADX WARN: Removed duplicated region for block: B:13:0x0091  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x00b9 A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x00ba  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x00c7  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00dd  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0080 A[RETURN] */
+    /* JADX WARN: Type inference failed for: r4v20 */
+    /* JADX WARN: Type inference failed for: r4v6 */
+    /* JADX WARN: Type inference failed for: r4v7, types: [java.lang.Object, kotlinx.coroutines.channels.ProducerScope] */
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @org.jetbrains.annotations.Nullable
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object invokeSuspend(@org.jetbrains.annotations.NotNull java.lang.Object r12) {
+        /*
+            Method dump skipped, instructions count: 238
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt$filterIndexed$1.invokeSuspend(java.lang.Object):java.lang.Object");
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    style="@style/match_v">
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        style="@style/match_v">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/DIMEN_60PX"
+            android:layout_marginStart="@dimen/DIMEN_60PX"
+            style="@style/warp_h">
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/totalTimeTv"
+                android:text="@string/format_trans_sport_time"
+                style="@style/warp"/>
+        </LinearLayout>
+        <com.czw.modes.widget.smartking.MonthLineView
+            android:id="@+id/monthLine1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_weight="1"
+        style="@style/match"/>
+</LinearLayout>

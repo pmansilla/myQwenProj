@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    style="@style/match_v">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true">
+        <com.czw.smartkit.views.StepView
+            android:id="@+id/step_history_day_stepView"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:text="@string/step"
+            android:layout_centerHorizontal="true"
+            style="@style/warp"/>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/step_history_day_stepTarget"
+            android:layout_marginBottom="50dp"
+            android:text="@string/target_step"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/warp"/>
+        <TextView
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/step_history_day_totalStep"
+            android:text="0"
+            android:layout_centerInParent="true"
+            style="@style/warp"/>
+    </RelativeLayout>
+</LinearLayout>

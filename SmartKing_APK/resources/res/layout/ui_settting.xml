@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView style="@style/match_style">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            style="@style/match_style">
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_userinfo"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_1"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_device"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_2"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_password"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_3"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_lose"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_4"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout
+                android:id="@+id/clock"
+                android:onClick="click"
+                style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_clock"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_5"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_search"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_6"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_photo"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_7"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_alert"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_8"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/img_set_about"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_9"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+            <RelativeLayout style="@style/setting_rl_layout">
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    style="@style/setting_rl_layout_left"/>
+                <TextView
+                    android:text="@string/setting_item_10"
+                    style="@style/setting_rl_layout_center"/>
+                <ImageView style="@style/setting_rl_layout_right"/>
+            </RelativeLayout>
+            <View style="@style/hline"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

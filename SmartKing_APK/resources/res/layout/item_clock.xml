@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/time"
+        android:text="08:00"
+        style="@style/clock_time_style"/>
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/name"
+        android:layout_marginLeft="@dimen/DIMEN_12PX"
+        android:layout_marginTop="3dp"
+        android:text="@string/clock"
+        android:layout_toRightOf="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginStart="@dimen/DIMEN_12PX"
+        android:layout_toEndOf="@+id/time"
+        style="@style/clock_time_style"/>
+    <com.suke.widget.SwitchButton
+        android:id="@+id/swEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentEnd="true"
+        app:sb_checkline_width="0dp"
+        app:sb_show_indicator="false"
+        app:sb_uncheckcircle_radius="0dp"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/swEnable"
+        android:layout_below="@+id/time"
+        android:layout_marginStart="12dp"
+        android:layout_toStartOf="@+id/swEnable">
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_1"
+                android:text="@string/week_1"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_2"
+                android:text="@string/week_2"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_3"
+                android:text="@string/week_3"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_4"
+                android:text="@string/week_4"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_5"
+                android:text="@string/week_5"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_6"
+                android:text="@string/week_6"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/clock_time_checkbox_layout">
+            <CheckBox
+                android:id="@+id/week_7"
+                android:text="@string/week_7"
+                style="@style/clock_time_checkbox"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

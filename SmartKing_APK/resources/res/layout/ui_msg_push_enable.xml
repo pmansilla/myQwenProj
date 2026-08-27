@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/acv_win"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <View style="@style/top_line"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/permissionLayout"
+                android:layout_marginTop="12dp"
+                style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/permission_for_notify"
+                    style="@style/user_info_left_text"/>
+                <TextView
+                    android:id="@+id/permissionTv"
+                    android:text="@string/state_close"
+                    android:layout_toLeftOf="@+id/ref_right_1"
+                    android:layout_toStartOf="@+id/ref_right_1"
+                    style="@style/user_info_left_text"/>
+                <ImageView
+                    android:id="@+id/ref_right_1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/ic_array_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/item_right_icon"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/appPermissionLayout"
+                android:layout_marginTop="12dp"
+                style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/sys_permission"
+                    style="@style/user_info_left_text"/>
+                <ImageView
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/ic_array_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/item_right_icon"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_call"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_call"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_message"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_message"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_qq"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_qq"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_weixin"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_weixin"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_facebook"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_facebook"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_twitter"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_twitter"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_whatsapp"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_whatsapp"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="@string/enable_linkedin"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_linked"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="Skype"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_skype"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="Line"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_line"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/user_item_layout">
+                <TextView
+                    android:text="Kakao talk"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_kakao"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                style="@style/user_item_layout">
+                <TextView
+                    android:text="Viber"
+                    style="@style/user_info_left_text"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/enable_viber"
+                    app:sb_checkline_width="0dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheckcircle_radius="0dp"
+                    style="@style/user_info_right_switch"/>
+                <View style="@style/user_setting_line"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/aiderFunctionTv"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="36dp"
+                android:minHeight="40dp"
+                android:text="@string/aider_function_tips"
+                android:layout_marginEnd="12dp"
+                style="@style/user_info_left_text"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

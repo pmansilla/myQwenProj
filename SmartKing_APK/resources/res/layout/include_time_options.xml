@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom|center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <RadioGroup
+        android:id="@+id/time_group"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        style="@style/match_h">
+        <RadioButton
+            android:id="@+id/time_1"
+            android:checked="true"
+            android:text="@string/time_day"
+            style="@style/time_bar_item_left"/>
+        <RadioButton
+            android:id="@+id/time_2"
+            android:layout_marginLeft="-0.8dp"
+            android:layout_marginRight="-0.8dp"
+            android:text="@string/time_week"
+            android:layout_marginStart="-0.8dp"
+            android:layout_marginEnd="-0.8dp"
+            style="@style/time_bar_item_center"/>
+        <RadioButton
+            android:id="@+id/time_3"
+            android:text="@string/time_month"
+            style="@style/time_bar_item_right"/>
+    </RadioGroup>
+</LinearLayout>

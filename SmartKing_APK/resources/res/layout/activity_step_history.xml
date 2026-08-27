@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/acv_win"
+    android:background="@mipmap/bg_comm"
+    android:fitsSystemWindows="true"
+    style="@style/lin_layout_m_v">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        layout="@layout/include_history_title"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/DIMEN_24PX"
+        layout="@layout/include_time_bar"
+        style="@style/warp"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/DIMEN_24PX"
+        layout="@layout/include_date_bar"/>
+    <com.czw.modes.widget.MyViewPager
+        android:id="@+id/myViewPager"
+        style="@style/match"/>
+</LinearLayout>

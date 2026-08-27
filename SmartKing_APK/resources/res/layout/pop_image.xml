@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0000"
+    android:fitsSystemWindows="true"
+    style="@style/match">
+    <com.czw.modes.widget.MyViewPager
+        android:id="@+id/viewPager"
+        android:background="#fc808080"
+        style="@style/match"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/imageIndex"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="24dp"
+        android:text="1/1"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_alignParentEnd="true"
+        style="@style/warp"/>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+package cn.smssdk.gui.layout;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import com.mob.tools.utils.ResHelper;
+
+/* loaded from: classes.dex */
+public class RegisterPageLayout extends BasePageLayout {
+    public RegisterPageLayout(Context context) {
+        super(context, (String) null);
+    }
+
+    @Override // cn.smssdk.gui.layout.BasePageLayout
+    protected void onCreateContent(LinearLayout linearLayout) {
+        TextView textView = new TextView(this.context);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
+        layoutParams.setMargins(0, ResHelper.dipToPx(this.context, 30), 0, 0);
+        textView.setLayoutParams(layoutParams);
+        textView.setGravity(17);
+        textView.setText(ResHelper.getStringRes(this.context, "smssdk_input_phone"));
+        textView.setTextColor(-14013648);
+        textView.setTextSize(0, ResHelper.dipToPx(this.context, 30));
+        linearLayout.addView(textView);
+        LinearLayout linearLayout2 = new LinearLayout(this.context);
+        LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-1, SizeHelper.fromPxWidth(this.context, 96));
+        layoutParams2.setMargins(SizeHelper.fromPx(this.context, 26), SizeHelper.fromPxWidth(this.context, 32), SizeHelper.fromPxWidth(this.context, 26), 0);
+        linearLayout2.setLayoutParams(layoutParams2);
+        linearLayout2.setId(ResHelper.getIdRes(this.context, "rl_country"));
+        int dipToPx = ResHelper.dipToPx(this.context, 110);
+        TextView textView2 = new TextView(this.context);
+        LinearLayout.LayoutParams layoutParams3 = new LinearLayout.LayoutParams(dipToPx, -2);
+        layoutParams3.gravity = 16;
+        textView2.setLayoutParams(layoutParams3);
+        textView2.setText(ResHelper.getStringRes(this.context, "smssdk_country"));
+        textView2.setTextColor(-16777216);
+        textView2.setTextSize(0, SizeHelper.fromPxWidth(this.context, 25));
+        linearLayout2.addView(textView2);
+        TextView textView3 = new TextView(this.context);
+        textView3.setId(ResHelper.getIdRes(this.context, "tv_country"));
+        LinearLayout.LayoutParams layoutParams4 = new LinearLayout.LayoutParams(-2, -2);
+        layoutParams4.gravity = 16;
+        layoutParams4.weight = 1.0f;
+        textView3.setLayoutParams(layoutParams4);
+        textView3.setGravity(19);
+        textView3.setPadding(SizeHelper.fromPxWidth(this.context, 14), 0, 0, 0);
+        Drawable drawable = this.context.getResources().getDrawable(ResHelper.getBitmapRes(this.context, "smssdk_arrow_right"));
+        drawable.setBounds(0, 0, ResHelper.dipToPx(this.context, 25), ResHelper.dipToPx(this.context, 25));
+        textView3.setCompoundDrawables(null, null, drawable, null);
+        textView3.setTextColor(-16777216);
+        textView3.setTextSize(0, SizeHelper.fromPxWidth(this.context, 25));
+        linearLayout2.addView(textView3);
+        linearLayout.addView(linearLayout2);
+        View view = new View(this.context);
+        LinearLayout.LayoutParams layoutParams5 = new LinearLayout.LayoutParams(-2, SizeHelper.fromPxWidth(this.context, 1));
+        layoutParams5.leftMargin = SizeHelper.fromPxWidth(this.context, 26);
+        layoutParams5.rightMargin = SizeHelper.fromPxWidth(this.context, 26);
+        view.setLayoutParams(layoutParams5);
+        view.setBackgroundColor(this.context.getResources().getColor(ResHelper.getColorRes(this.context, "smssdk_gray_press")));
+        linearLayout.addView(view);
+        LinearLayout linearLayout3 = new LinearLayout(this.context);
+        LinearLayout.LayoutParams layoutParams6 = new LinearLayout.LayoutParams(-1, SizeHelper.fromPxWidth(this.context, 70));
+        layoutParams6.setMargins(SizeHelper.fromPxWidth(this.context, 26), SizeHelper.fromPxWidth(this.context, 30), SizeHelper.fromPxWidth(this.context, 26), 0);
+        linearLayout3.setLayoutParams(layoutParams6);
+        TextView textView4 = new TextView(this.context);
+        textView4.setId(ResHelper.getIdRes(this.context, "tv_country_num"));
+        textView4.setLayoutParams(new LinearLayout.LayoutParams(dipToPx, -1));
+        textView4.setGravity(19);
+        textView4.setTextColor(-13290187);
+        textView4.setTextSize(0, SizeHelper.fromPxWidth(this.context, 25));
+        linearLayout3.addView(textView4);
+        LinearLayout linearLayout4 = new LinearLayout(this.context);
+        LinearLayout.LayoutParams layoutParams7 = new LinearLayout.LayoutParams(0, -1);
+        layoutParams7.weight = 1.0f;
+        linearLayout4.setLayoutParams(layoutParams7);
+        EditText editText = new EditText(this.context);
+        editText.setId(ResHelper.getIdRes(this.context, "et_write_phone"));
+        LinearLayout.LayoutParams layoutParams8 = new LinearLayout.LayoutParams(0, -2);
+        layoutParams8.gravity = 16;
+        layoutParams8.weight = 1.0f;
+        editText.setLayoutParams(layoutParams8);
+        editText.setBackgroundDrawable(null);
+        editText.setHint(ResHelper.getStringRes(this.context, "smssdk_write_mobile_phone"));
+        editText.setInputType(3);
+        editText.setTextColor(-13290187);
+        editText.setTextSize(0, SizeHelper.fromPxWidth(this.context, 25));
+        linearLayout4.addView(editText);
+        ImageView imageView = new ImageView(this.context);
+        imageView.setId(ResHelper.getIdRes(this.context, "iv_clear"));
+        LinearLayout.LayoutParams layoutParams9 = new LinearLayout.LayoutParams(SizeHelper.fromPxWidth(this.context, 24), SizeHelper.fromPxWidth(this.context, 24));
+        layoutParams9.gravity = 16;
+        layoutParams9.rightMargin = SizeHelper.fromPxWidth(this.context, 20);
+        imageView.setLayoutParams(layoutParams9);
+        imageView.setBackgroundResource(ResHelper.getBitmapRes(this.context, "smssdk_clear_search"));
+        imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        imageView.setVisibility(8);
+        linearLayout4.addView(imageView);
+        linearLayout3.addView(linearLayout4);
+        linearLayout.addView(linearLayout3);
+        View view2 = new View(this.context);
+        LinearLayout.LayoutParams layoutParams10 = new LinearLayout.LayoutParams(-2, SizeHelper.fromPxWidth(this.context, 1));
+        layoutParams10.leftMargin = SizeHelper.fromPxWidth(this.context, 26);
+        layoutParams10.rightMargin = SizeHelper.fromPxWidth(this.context, 26);
+        view2.setLayoutParams(layoutParams10);
+        view2.setBackgroundColor(this.context.getResources().getColor(ResHelper.getColorRes(this.context, "smssdk_gray_press")));
+        linearLayout.addView(view2);
+        Button button = new Button(this.context);
+        button.setId(ResHelper.getIdRes(this.context, "btn_next"));
+        LinearLayout.LayoutParams layoutParams11 = new LinearLayout.LayoutParams(-1, SizeHelper.fromPxWidth(this.context, 72));
+        layoutParams11.setMargins(SizeHelper.fromPxWidth(this.context, 26), SizeHelper.fromPxWidth(this.context, 36), SizeHelper.fromPxWidth(this.context, 26), 0);
+        button.setLayoutParams(layoutParams11);
+        button.setBackgroundResource(ResHelper.getBitmapRes(this.context, "smssdk_btn_disenable"));
+        button.setText(ResHelper.getStringRes(this.context, "smssdk_next"));
+        button.setTextColor(-1);
+        button.setTextSize(0, SizeHelper.fromPxWidth(this.context, 25));
+        button.setPadding(0, 0, 0, 0);
+        linearLayout.addView(button);
+    }
+}

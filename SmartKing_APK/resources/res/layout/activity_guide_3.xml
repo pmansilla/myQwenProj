@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    style="@style/match">
+    <me.panpf.sketch.SketchImageView
+        android:background="@mipmap/guide_item3"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        style="@style/match"/>
+    <Button
+        android:id="@+id/sureBtn"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:layout_width="@dimen/DIMEN_360PX"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_marginBottom="@dimen/DIMEN_128PX"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

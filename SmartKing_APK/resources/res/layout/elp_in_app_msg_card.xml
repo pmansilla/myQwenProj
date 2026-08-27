@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llView"
+        android:background="@drawable/elp_msg_bg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#070306"
+            android:id="@+id/tvTitle"
+            android:paddingRight="20dp"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/ivClose"
+        android:padding="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/elp_close"
+        android:scaleType="centerCrop"/>
+</FrameLayout>

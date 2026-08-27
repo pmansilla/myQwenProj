@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/act_win"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <include layout="@layout/include_date_bar"/>
+    <com.czw.smartkit.views.multiColumnView.MultiColumnView
+        android:id="@+id/blood_history_multiColumnView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+    <View
+        android:background="#999"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <ListView
+        android:id="@+id/listView"
+        style="@style/match"/>
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:visibility="gone"
+        style="@style/match">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/img_empty"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

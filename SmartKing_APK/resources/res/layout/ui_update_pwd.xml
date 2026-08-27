@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/acv_win"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        style="@style/user_item_layout">
+        <TextView
+            android:id="@+id/user_account"
+            android:text="123465798"
+            style="@style/user_info_left_text"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/user_item_layout">
+        <EditText
+            android:textSize="12sp"
+            android:id="@+id/code_et"
+            android:background="#0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:minHeight="40dp"
+            android:hint="@string/auth_code"
+            android:layout_toLeftOf="@+id/ref_auth_code"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/ref_auth_code"
+            style="@style/user_info_left_text"/>
+        <Button
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:id="@+id/ref_auth_code"
+            android:background="@drawable/small_btn_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginRight="12dp"
+            android:minWidth="80sp"
+            android:text="@string/get_auth_code"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/user_item_layout">
+        <EditText
+            android:textSize="12sp"
+            android:id="@+id/user_pwd"
+            android:background="#0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:minHeight="40dp"
+            android:hint="@string/pwd_6_16"
+            android:layout_marginEnd="12dp"
+            style="@style/user_info_left_text"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/sureBtn"
+        android:background="@drawable/big_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="48sp"
+        android:layout_marginRight="36dp"
+        android:text="@string/sure"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/acv_win"
+    android:background="#f2f2f2"
+    style="@style/lin_layout_m_v">
+    <include layout="@layout/include_title"/>
+    <RelativeLayout
+        android:layout_height="80dp"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_header"
+            style="@style/user_info_item_layout_left_text"/>
+        <me.panpf.sketch.SketchImageView
+            android:id="@+id/userHeader"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="40dp"
+            android:src="@mipmap/logo"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_alignParentEnd="true"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userName"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_nickname"
+            style="@style/user_info_item_layout_left_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <TextView
+            android:id="@+id/tv_userName"
+            android:text="smartking"
+            style="@style/user_info_item_layout_right_text"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_sex"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_sex"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_user_Sex"
+            android:text="111"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_age"
+        android:onClick="click"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_age"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_user_age"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_height"
+        android:layout_marginTop="18dp"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_height"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_user_height"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_weight"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_weight"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_user_weight"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/step_target"
+        android:layout_marginTop="18dp"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_target_step"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_user_target"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/step_len"
+        style="@style/user_info_item_layout">
+        <TextView
+            android:text="@string/user_step_length"
+            style="@style/user_info_item_layout_left_text"/>
+        <TextView
+            android:id="@+id/tv_setp_len"
+            android:text="74"
+            style="@style/user_info_item_layout_right_text"/>
+        <ImageView style="@style/user_info_item_layout_right_image"/>
+        <View style="@style/_h_line"/>
+    </RelativeLayout>
+</LinearLayout>

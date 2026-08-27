@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/type_1"
+        android:text="item1"
+        style="@style/reg_type_phone"/>
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"/>
+    <TextView
+        android:id="@+id/type_2"
+        android:text="item2"
+        style="@style/reg_type_email"/>
+    <TextView
+        android:id="@+id/cancel_type"
+        android:text="@string/cancel"
+        style="@style/reg_type_cancel"/>
+</LinearLayout>

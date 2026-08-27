@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/match_v">
+        <include layout="@layout/include_title"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <ImageView
+                android:id="@+id/logo_iv"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@mipmap/logo"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/appversionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/app_name_sk"/>
+        </LinearLayout>
+        <View style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/help_info"
+                style="@style/left_text_12dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item2"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/upgrade"
+                style="@style/left_text_12dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item3"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/ota"
+                style="@style/left_text_12dp"/>
+            <TextView
+                android:id="@+id/firmwareTv"
+                style="@style/right_text_30dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item4"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/reset_device"
+                style="@style/left_text_12dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item5"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/use_protocol_auth_message0"
+                style="@style/left_text_12dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View style="@style/h_line"/>
+        <RelativeLayout
+            android:id="@+id/item6"
+            android:layout_height="48dp"
+            style="@style/match_style">
+            <TextView
+                android:text="@string/use_protocol_auth_message1"
+                style="@style/left_text_12dp"/>
+            <View style="@style/right_array_image_12dp"/>
+        </RelativeLayout>
+        <View style="@style/h_line"/>
+        <LinearLayout
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_item_1"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/about_item_2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:id="@+id/debug_btn"
+        android:background="@color/red"
+        android:paddingLeft="12dp"
+        android:paddingTop="6dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="6dp"
+        android:layout_margin="12dp"
+        android:text="debug"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_alignParentEnd="true"
+        style="@style/wrap"/>
+</RelativeLayout>

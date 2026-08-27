@@ -1,0 +1,8 @@
+package com.amap.api.maps.model;
+
+/* loaded from: classes.dex */
+public class AMapPara {
+    public static final int DOTTEDLINE_TYPE_CIRCLE = 1;
+    public static final int DOTTEDLINE_TYPE_DEFAULT = -1;
+    public static final int DOTTEDLINE_TYPE_SQUARE = 0;
+}

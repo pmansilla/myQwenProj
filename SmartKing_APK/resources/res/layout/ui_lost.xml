@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/acv_win"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <RelativeLayout style="@style/user_item_layout">
+        <TextView
+            android:text="@string/lost_title"
+            style="@style/user_info_left_text"/>
+        <com.suke.widget.SwitchButton
+            android:id="@+id/enable"
+            app:sb_checkline_width="0dp"
+            app:sb_show_indicator="false"
+            app:sb_uncheckcircle_radius="0dp"
+            style="@style/user_info_right_switch"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/alertTime"
+        android:visibility="gone"
+        style="@style/user_item_layout">
+        <TextView
+            android:text="@string/lost_alert_time"
+            android:layout_alignBaseline="@+id/sit_time"
+            android:layout_alignBottom="@+id/sit_time"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentStart="true"
+            style="@style/user_info_left_text"/>
+        <TextView
+            android:id="@+id/sit_time"
+            android:text="15"
+            style="@style/user_info_item_layout_right_text"/>
+        <View style="@style/right_array_image_12dp"/>
+        <View style="@style/user_setting_line"/>
+    </RelativeLayout>
+</LinearLayout>
